@@ -17,19 +17,19 @@ and open the template in the editor.
 
 
             <div id="modal-wrapper" class="modal">
-
+<div></div>
                 <form class="modal-content animate" id="form1" action="verify.php" method="post">
 
                     <div class="imgcontainer">
                         <span onclick="window.location.href = 'index.php'" class="close" title="Close">&times;</span>
                         <img src="img/loginavtar.png" alt="Avatar" class="avatar">
-                        
+
                         <h1 style="text-align:center">Login</h1>
                         <?php
                         session_start();
                         if(isset($_SESSION['error']))
                         echo'<h2><font color="red">'.$_SESSION['error'].'</font></h2>';
-                        
+
                         unset($_SESSION['error']);
                         ?>
                     </div>
@@ -37,17 +37,17 @@ and open the template in the editor.
                     <div class="container">
                         <input type="checkbox" name="admin" style="margin:26px 30px;">Admin
                         <input type="email" name="uEmail" placeholder="Email" required/>
-                        <input type="password" name="password" placeholder="Password" required/>   
+                        <input type="password" name="password" placeholder="Password" required/>
 <!--                        <div class=""><img src="captchafont.php" width="150" height="60"></div>
-                        
-                            
+
+
                          <input class="input100" type="text" name="vercode1" placeholder="Enter Your Captch Here" required>
                             -->
                         <button type="submit">Login</button>
-                        <input type="checkbox" name="rememberMe" style="margin:26px 30px;"/> Remember me      
+                        <input type="checkbox" name="rememberMe" style="margin:26px 30px;"/> Remember me
                         <a href="forgotPassword.php" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a><br>
                         <div style="text-decoration:none; float:left; margin-left:30%; position: relative; ">
-                            Don't have an Account? <a href="register.php">Sign Up</a>   
+                            Don't have an Account? <a href="register.php">Sign Up</a>
                         </div>
                     </div>
 
