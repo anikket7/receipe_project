@@ -40,7 +40,7 @@ A simple, dynamic recipe web application built using **PHP**, **MySQL**, **HTML*
 3. **Import the database**
    - Open your browser and go to:  
      `http://localhost/phpmyadmin`
-   - Create a new database (e.g., `recipe_db`)
+   - Create a new database (e.g., `cookie_rookie(4)`)
    - Import the `.sql` file from the project folder
 
 4. **Configure the database**
